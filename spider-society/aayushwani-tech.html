@@ -1,0 +1,188 @@
+<!-- Save this file as your-github-username.html -->
+<div
+  class="spider-card"
+  data-name="Aayush Wani"
+  data-alias="Iron Spider"
+  data-github="your-github-username"
+  data-suit="#FFD700"
+>
+  <style>
+    /* ── Stark Industries Nanotech Theme (Compact Size) ─────────────────── */
+    .spider-card {
+      --iron-red: #d91a2a;
+      --stark-gold: #ffc000;
+      --armor-dark: #111111;
+      --armor-light: #222222;
+      
+      /* Reduced dimensions */
+      width: 240px;
+      height: 330px;
+      box-sizing: border-box;
+      padding: 16px;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--armor-dark) 0%, var(--armor-light) 100%);
+      border: 2px solid var(--iron-red);
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 
+        0 10px 25px rgba(0,0,0,0.8),
+        inset 0 0 15px rgba(217, 26, 42, 0.4);
+    }
+
+    /* Nanotech Hex Grid Background */
+    .spider-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: 
+        radial-gradient(var(--iron-red) 1px, transparent 1px),
+        radial-gradient(var(--iron-red) 1px, transparent 1px);
+      background-size: 16px 16px;
+      background-position: 0 0, 8px 8px;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    /* Holographic Shine Overlay */
+    .spider-card::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        45deg,
+        transparent 45%,
+        rgba(255, 192, 0, 0.1) 50%,
+        transparent 55%
+      );
+      pointer-events: none;
+    }
+
+    /* Scaled-down Avatar */
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid var(--stark-gold);
+      object-fit: cover;
+      box-shadow: 
+        0 0 15px rgba(255, 192, 0, 0.5),
+        0 0 30px rgba(217, 26, 42, 0.4);
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+      background-color: var(--armor-dark);
+    }
+
+    /* Scaled Typography */
+    .alias {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.1;
+      letter-spacing: 1.5px;
+      color: var(--stark-gold);
+      text-transform: uppercase;
+      font-weight: 900;
+      text-shadow: 0 2px 8px rgba(255, 192, 0, 0.4);
+      position: relative;
+      z-index: 2;
+    }
+
+    .name {
+      margin: 4px 0 0;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 2;
+    }
+
+    .handle {
+      margin: 2px 0 12px;
+      font-family: ui-monospace, monospace;
+      font-size: 10px;
+      color: #888;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* High-Tech Skill Tags */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .skills li {
+      padding: 4px 10px;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--armor-dark);
+      background: var(--stark-gold);
+      border-radius: 3px;
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+      box-shadow: 0 3px 6px rgba(255, 192, 0, 0.3);
+    }
+
+    .skills li:nth-child(even) {
+      background: var(--iron-red);
+      color: #fff;
+    }
+
+    /* Stark UI Footer */
+    .footer {
+      margin-top: auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-family: ui-monospace, monospace;
+      font-size: 9px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--stark-gold);
+      border-top: 1px solid rgba(255, 192, 0, 0.3);
+      padding-top: 10px;
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+
+  <!-- Replace with your actual GitHub avatar URL -->
+  <img class="avatar" src="https://github.com/your-github-username.png" alt="Avatar" />
+  
+  <h1 class="alias">Iron Spider</h1>
+  <p class="name">Aayush Wani</p>
+  <p class="handle">@your-github-username</p>
+  
+  <ul class="skills">
+    <li>Waldoes</li>
+    <li>Flight</li>
+    <li>Nanotech</li>
+    <li>AI Assist</li>
+  </ul>
+  
+  <div class="footer">
+    <span>STARK TECH</span>
+    <span>EARTH-199999</span>
+  </div>
+</div>
